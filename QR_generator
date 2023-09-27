@@ -1,0 +1,10 @@
+import pyqrcode
+from pyqrcode import QRCode
+import png
+
+s = 'https://nikhilpanda.netlify.app/'
+
+url  = pyqrcode.create(s)
+
+url.svg("portfollio.svg",scale=8)
+url.png("portfollio.png",scale=6)
